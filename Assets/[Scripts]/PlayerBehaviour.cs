@@ -106,6 +106,21 @@ public class PlayerBehaviour : MonoBehaviour
         return x;
     }
 
+    private void OnCollisionEnter2D(Collision2D otherCollider)
+    {
+        if(otherCollider.gameObject.CompareTag("Platform"))
+        {
+            transform.SetParent(otherCollider.transform);
+        }
+    }
+    
+    private void OnCollisionExit2D(Collision2D otherCollider)
+    {
+        if (otherCollider.gameObject.CompareTag("Platform"))
+        {
+            transform.SetParent(null);
+        }
+    }
 
     // UTILITIES
 
