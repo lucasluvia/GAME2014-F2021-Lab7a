@@ -13,5 +13,9 @@ public class DeathPlaneBehaviour : MonoBehaviour
         {
             otherCollider.transform.position = PlayerSpawnpoint.position;
         }
+        else
+        {
+            otherCollider.gameObject.SetActive(false);
+        }
     }
 }
