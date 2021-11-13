@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7115873484697698538}
   - component: {fileID: 7115873484697698539}
+  - component: {fileID: 275941980}
   m_Layer: 6
   m_Name: Moving Platform
   m_TagString: Platform
@@ -243,6 +244,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &275941980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115873484697698536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb360817a0534d5449e2c6b316c3bfc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Direction: 0
+  Speed: 4
+  Distance: 6
+  DistanceOffset: 0.05
+  isLooping: 1
 --- !u!1 &7115873484747665343
 GameObject:
   m_ObjectHideFlags: 0
